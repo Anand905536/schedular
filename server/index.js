@@ -5,8 +5,10 @@ const port=process.env.PORT_NUMBER
 const routes=require('./routes/route')
 const cors=require('cors')
 
-// cors for accessing the data between diffrent enviornment of client and server
+// cors for accessing the data between diffrent hosting of client and server
 app.use(cors());
+
+// connecting to the database
 
 // routes redirected
 app.use('/api',routes)
